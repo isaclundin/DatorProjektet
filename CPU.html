@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
+    <meta charset= "utf-8"/>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPU</title>
-    <link rel="stylesheet" href="CPU.css">
+    <meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website">
+    <meta name="keywords" content="google nexus menu, css transition, sidebar, side menu, slide out menu"/>
+    <meta name="author" content="Codrops"/>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-   <header>Dator projektet</header>
-   <div>
+   <div class="container">
+   <ul id="gn-menu" class="gn-menu-main">
+       <li class="gn-trigger">
+           <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+           <nav class="gn-menu-wrapper">
+               <div class="gn-scroller">
+                   <ul class="gn-menu">
+                        <li><a href="APU.html" class="gn-icon gn-icon-APU">Accelerated Processing Unit</a></li>
+                        <li><a href="Chassi.html" class="gn-icon gn-icon-Chassi">Chassi</a></li>      
+                        <li><a href="CPU.html" class="gn-icon  gn-icon-CPU">Central processing unit</a></li>
+                        <li><a href="GPU.html" class="gn-icon gn-icon-GPU">Graphics Processing Unit</a></li>
+                        <li><a href="Moderkort.html" class="gn-icon gn-icon-Moderkort">Moderkort</a></li>
+                        <li><a href="PSU.html" class="gn-icon gn-icon-PSU">Nätaggregat</a></li>
+                        <li><a href="RAM.html" class="gn-icon gn-icon-RAM">Random access memory</a></li>
+                        <li><a href="SSD.html" class="gn-icon gn-icon-SSD">Hårddiskar</a></li>
+                   </ul>
+               </div>
+           </nav>
+       </li>
+       
+       <li><a href="Start.html">Start</a></li>
+   </ul>
+   <header>
        <h1>CPU</h1>
-       <img src="" alt="">
-       <p>CPU är förkortningen av Central processing unit,  eller som det heter på sveriget språket centralprocessor
-        är den del av datorn som utför alla program genom att den hämtar maskininstruktioner och utför de begärda operationerna 
-        som olika beräkningar och datahantering. Det finns någon form all processor i allt från bilar till kaffebryggare</p>
-   </div>
-    
+   </header>
+    </div>
+    <script src="js/classie.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script>
+        new gnMenu(document.getElementById('gn-menu'));
+    </script>
 </body>
 </html>
